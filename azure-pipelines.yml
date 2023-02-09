@@ -27,6 +27,6 @@ stages:
       timeoutInMinutes: 60 # 1 hour
       pool:
         default
-        steps:
-        - checkout: none
-        - script: echo "hello code"
+      steps:
+      - checkout: none
+      - script: echo "hello code"
