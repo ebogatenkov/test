@@ -1,0 +1,32 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+resources:
+  repositories:
+  - repository: mytest
+    type: github
+    name: Paprika-a11y/mytest
+    ref: refs/heads/main
+    endpoint: githubPAT
+  - repository: mytest2
+    type: github
+    name: Paprika-a11y/mytest2
+    ref: refs/heads/main
+    endpoint: githubPAT
+
+trigger: none
+
+stages:
+  - stage: buildDevelopment
+    displayName: "build | development"
+    jobs:
+    - job: myjob
+      displayName: "build development version"
+      timeoutInMinutes: 60 # 1 hour
+      pool:
+        default
+        steps:
+        - checkout: none
+        - script: echo "hello code"
