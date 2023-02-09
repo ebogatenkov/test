@@ -5,14 +5,14 @@
 
 resources:
   repositories:
-  - repository: mytest
+  - repository: test
     type: github
-    name: Paprika-a11y/mytest
+    name: ebogatenkov/test
     ref: refs/heads/main
     endpoint: githubPAT
-  - repository: mytest2
+  - repository: test2
     type: github
-    name: Paprika-a11y/mytest2
+    name: ebogatenkov/test2
     ref: refs/heads/main
     endpoint: githubPAT
 
