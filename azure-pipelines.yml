@@ -26,7 +26,7 @@ stages:
       displayName: "build development version"
       timeoutInMinutes: 60 # 1 hour
       pool:
-        default
+        Azure Pipelines
       steps:
       - checkout: none
       - script: echo "hello code"
