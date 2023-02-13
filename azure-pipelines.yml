@@ -18,6 +18,7 @@ resources:
 
 trigger: none
 
+
 stages:
   - stage: buildDevelopment
     displayName: "build | development"
