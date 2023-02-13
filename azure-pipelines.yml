@@ -16,7 +16,6 @@ resources:
     ref: refs/heads/main
     endpoint: githubPAT
 
-
 trigger: none
 
 stages:
