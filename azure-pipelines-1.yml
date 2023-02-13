@@ -11,8 +11,6 @@ resources:
     name: ebogatenkov/test  # repository name (format depends on `type`)
     ref: refs/heads/main  # ref name to use; defaults to 'refs/heads/main'
     endpoint: githubPAT  # name of the service connection to use (for types that aren't Azure Repos)
-    trigger:
-    - main
 
 trigger: none
 pr: none
