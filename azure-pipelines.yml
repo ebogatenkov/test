@@ -17,6 +17,11 @@ resources:
     ref: refs/heads/main
     endpoint: githubPAT
 
+trigger:
+  none
+pr:
+  none
+
 stages:
   - stage: buildDevelopment
     displayName: "build | development"
