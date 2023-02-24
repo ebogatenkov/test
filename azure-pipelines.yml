@@ -6,6 +6,12 @@
 pool:
   default
 
+trigger:
+ none
+pr:
+ none
+
+appendCommitMessageToRunName:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
