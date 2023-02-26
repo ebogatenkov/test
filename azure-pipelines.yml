@@ -6,12 +6,24 @@
 pool:
   default
 
+resources:
+  repositories:
+  - repository: test
+    type: github
+    name: ebogatenkov/test
+    ref: refs/heads/main
+    endpoint: githubPAT
+  - repository: test2
+    type: github
+    name: ebogatenkov/test2
+    ref: refs/heads/main
+    endpoint: githubPAT
+
 trigger:
  none
 pr:
  none
 
-appendCommitMessageToRunName:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
