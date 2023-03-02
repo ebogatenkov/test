@@ -12,7 +12,7 @@ resources:
     type: github
     name: ebogatenkov/test
     ref: refs/heads/main
-    endpoint: githubPATmaster
+    endpoint: githubPATfeature
   - repository: test2
     type: github
     name: ebogatenkov/test2
